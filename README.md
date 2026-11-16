@@ -5,7 +5,7 @@ A clickable prototype of the redesigned Spurgeons Courses sign-in page and the c
 - `index.html` – sign-in page. Submitting the form goes straight to the dashboard (no real email is sent).
 - `dashboard.html` – course dashboard, built from the "Sign On Screen" Figma file.
 
-Plain HTML, CSS and JavaScript – no build step. Open `index.html` in a browser, or serve it with GitHub Pages.
+Plain HTML, CSS and JavaScript and no build step. Open `index.html` in a browser, or serve it with GitHub Pages.
 
 ## Structure
 
