@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Your courses | Spurgeons Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/dashboard.css?v=19">
+</head>
+<body>
+  <div class="page">
+
+    <nav class="nav" aria-label="Account">
+      <a href="dashboard.html" class="nav-brand">
+        <img src="images/spurgeons-logo.svg?v=2" alt="Spurgeons" class="brand-logo">
+        <span class="brand-product">Courses</span>
+      </a>
+      <div class="nav-start">
+        <a href="dashboard.html" class="nav-home" aria-current="page">Home</a>
+
+        <div class="manage">
+          <button type="button" class="manage-toggle" id="manage-toggle" aria-expanded="false" aria-controls="manage-menu">
+            Manage Account
+            <span class="chev" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"></path></svg>
+            </span>
+          </button>
+          <div class="manage-menu" id="manage-menu">
+            <a href="#update-name">Update Name</a>
+            <a href="#reset-password">Reset Password</a>
+            <a href="#delete-account">Delete Account</a>
+          </div>
+        </div>
+
+        <a href="index.html" class="nav-link">Log out</a>
+      </div>
+
+      <div class="nav-end">
+        <a href="#messages" class="nav-mail" aria-label="Messages">
+          <svg aria-hidden="true" width="22" height="18" viewBox="0 0 58 46" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="52" height="38" rx="4"></rect><path d="M4 6l25 21L54 6"></path><path d="M33 23c3 4 4 9 1 13-2 3-6 2-6-1 0-4 5-6 9-3"></path></svg>
+        </a>
+      </div>
+    </nav>
+
+    <main class="wrap">
+
+      <section class="progress" aria-label="Your progress">
+        <div class="progress-main">
+          <h1 class="name">[Full Name]</h1>
+          <div class="stats">
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">courses</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">complete</span></div>
+            <div class="stat"><span class="stat-num">1</span><span class="stat-label">certificate</span></div>
+          </div>
+        </div>
+        <div class="progress-art" aria-hidden="true">
+          <span class="orb orb--a"></span>
+          <span class="orb orb--b"></span>
+          <img src="images/hero-main.svg?v=1" alt="">
+        </div>
+      </section>
+
+      <section class="courses" aria-labelledby="courses-title">
+        <div class="courses-bar">
+          <h2 id="courses-title">Your Courses</h2>
+          <div class="courses-actions">
+            <button type="button" class="search-toggle" id="search-toggle" aria-label="Search courses" aria-expanded="false" aria-controls="search-form">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            </button>
+            <button type="button" class="btn-primary" id="toggle-all">Expand All</button>
+          </div>
+        </div>
+
+        <div class="search-wrap" id="search-wrap">
+          <div class="search-clip">
+            <form class="search" id="search-form">
+              <label for="course-search" class="visually-hidden">Search your courses</label>
+              <input id="course-search" type="search" placeholder="Search your courses">
+              <button type="submit" class="btn-search">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="carousel" aria-roledescription="carousel" aria-label="Your programmes">
+          <div class="carousel-head">
+            <div class="prog-tabs" id="prog-tabs" aria-label="Programmes"></div>
+            <div class="carousel-arrows">
+              <button type="button" class="arrow" id="prev" aria-label="Previous programme">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button type="button" class="arrow" id="next" aria-label="Next programme">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+            </div>
+          </div>
+          <div class="track" id="track"></div>
+          <div class="dots" id="dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="help" id="questions" aria-labelledby="help-title">
+        <span class="help-art" aria-hidden="true"><img src="images/contact.svg?v=1" alt=""></span>
+        <div class="help-text">
+          <h2 id="help-title">Any questions?</h2>
+          <p>Our team is happy to help with your courses, your login or your certificates.</p>
+        </div>
+        <a href="#contact" class="btn-primary help-btn">Get in touch</a>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/dashboard.js?v=14"></script>
+</body>
+</html>

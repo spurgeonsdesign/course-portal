@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Sign in | Spurgeons Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/login.css?v=5">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a href="index.html" class="brand">
+        <img src="images/spurgeons-logo.svg?v=2" alt="Spurgeons" class="brand-logo">
+        <span class="brand-product">Courses</span>
+      </a>
+      <a href="#help" class="pill-link">Need help?</a>
+    </header>
+
+    <main class="layout">
+      <section class="hero" aria-labelledby="hero-title">
+        <span class="hero-tag"><span class="hero-dot" aria-hidden="true"></span>Spurgeons Courses</span>
+        <h1 id="hero-title">Access Spurgeons Courses for free</h1>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-circle"></div>
+          <div class="hero-orb"></div>
+          <div class="hero-orb hero-orb--small"></div>
+          <div class="hero-orb hero-orb--pearl"></div>
+          <div class="hero-spark"></div>
+          <img src="images/hero-main.svg?v=1" alt="" class="hero-main">
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="form-title">
+        <div class="card-intro">
+          <h2 id="form-title">Sign in or create an account</h2>
+          <p>No password to remember. Pop in your email and we'll send you a link that signs you straight in. New here? Your account is set up when you first use the link.</p>
+        </div>
+
+        <!-- Showcase only: submitting goes straight to the dashboard. -->
+        <form class="form" action="dashboard.html" method="get" novalidate>
+          <input type="hidden" name="v" value="21">
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" type="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+          <button type="submit" class="btn-primary">
+            <span class="btn-label">Email me a login link</span>
+            <span class="btn-bubble" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg>
+            </span>
+          </button>
+        </form>
+
+        <p class="legal">We will not use your email address for any purpose outside of the administration of Spurgeons Courses, unless you give explicit consent. By creating an account, you are agreeing to the Spurgeons <a href="#privacy">privacy policy</a> and <a href="#terms">terms and conditions</a>.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
